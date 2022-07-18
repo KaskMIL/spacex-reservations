@@ -11,7 +11,9 @@ function DragonPage() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(getDragonsAPI());
+    if (!dragons.length) {
+      dispatch(getDragonsAPI());
+    }
   }, []);
 
   return (
