@@ -5,6 +5,7 @@ import DragonPage from './Dragon/DragonPage';
 import MissionPage from './Mission/MissionPage';
 import RocketsPage from './Rockets/RocketsPage';
 import ProfilePage from './ProfilePage';
+import './App.css';
 
 function App() {
   return (
