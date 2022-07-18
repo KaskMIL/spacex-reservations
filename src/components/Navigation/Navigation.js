@@ -29,10 +29,11 @@ function Navigation() {
               Missions
             </NavLink>
           </li>
-          <li>
+          <li className={styles.dragons}>
             <NavLink
               to="/dragons"
-              className={(Link) => (Link.isActive ? 'active' : 'none')}
+              className={(Link) => (
+                Link.isActive ? 'active' : 'none')}
             >
               Dragons
             </NavLink>

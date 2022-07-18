@@ -20,3 +20,8 @@
   list-style: none;
   column-gap: 1rem;
 }
+
+.dragons{
+  border-right: 2px solid black;
+  padding-right: 5px;
+}
