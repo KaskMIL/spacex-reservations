@@ -25,7 +25,7 @@ function DragonPage() {
               name={dragon.dragon_name}
               type={dragon.dragon_type}
               description={dragon.dragon_description}
-              images={dragon.flickr_images}
+              images={dragon.dragon_images}
             />
           ))}
         </section>

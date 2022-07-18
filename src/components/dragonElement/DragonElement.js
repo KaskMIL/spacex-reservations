@@ -8,7 +8,7 @@ function DragonElement(props) {
 
   return (
     <article>
-      <img src={images[1]} alt="dragon" />
+      <img src={images} alt="dragon" />
       <div>
         <h2>{name}</h2>
         <h3>{type}</h3>
@@ -22,14 +22,14 @@ DragonElement.propTypes = {
   name: PropTypes.string,
   type: PropTypes.string,
   description: PropTypes.string,
-  images: PropTypes.arrayOf(PropTypes.string),
+  images: PropTypes.string,
 };
 
 DragonElement.defaultProps = {
   name: '',
   type: '',
   description: '',
-  images: [''],
+  images: '',
 };
 
 export default DragonElement;

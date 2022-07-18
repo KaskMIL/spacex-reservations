@@ -35,7 +35,7 @@ const dragonSlice = createSlice({
           dragon_name: dragon.name,
           dragon_type: dragon.type,
           dragon_description: dragon.description,
-          dragon_images: dragon.flickr_images,
+          dragon_images: dragon.flickr_images[2],
         };
         dragons.push(data);
       });
