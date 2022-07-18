@@ -15,10 +15,18 @@ function Navigation() {
         <ul className={styles.list}>
           <li>
             <NavLink
-              to="/"
+              to="/rockets"
               className={(Link) => (Link.isActive ? 'active' : 'none')}
             >
-              My Profile
+              Rockets
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/missions"
+              className={(Link) => (Link.isActive ? 'active' : 'none')}
+            >
+              Missions
             </NavLink>
           </li>
           <li>
@@ -29,22 +37,12 @@ function Navigation() {
               Dragons
             </NavLink>
           </li>
-
           <li>
             <NavLink
-              to="/missions"
+              to="/"
               className={(Link) => (Link.isActive ? 'active' : 'none')}
             >
-              Missions
-            </NavLink>
-          </li>
-
-          <li>
-            <NavLink
-              to="/rockets"
-              className={(Link) => (Link.isActive ? 'active' : 'none')}
-            >
-              Rockets
+              My Profile
             </NavLink>
           </li>
         </ul>
