@@ -12,9 +12,8 @@ function App() {
     <>
       <Routes>
         <Route
-          exact
           path="/"
-          element={(<ProfilePage />)}
+          element={<RocketsPage />}
         />
 
         <Route
@@ -28,9 +27,11 @@ function App() {
         />
 
         <Route
-          path="/rockets"
-          element={<RocketsPage />}
+          exact
+          path="/profile"
+          element={(<ProfilePage />)}
         />
+
       </Routes>
     </>
   );
