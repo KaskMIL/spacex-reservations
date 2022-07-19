@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router } from 'react-router-dom';
 import App from './components/App';
-import store from './Redux/mission_store';
+import store from './Redux/store';
 
 const append = document.querySelector('#root');
 const root = createRoot(append);
