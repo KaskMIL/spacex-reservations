@@ -15,6 +15,7 @@ function DragonElement(props) {
         <h2>{name}</h2>
         <h3>{type}</h3>
         <p>{description}</p>
+        <button type="submit">Reserve Dragon</button>
       </div>
     </article>
   );
