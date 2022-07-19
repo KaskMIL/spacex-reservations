@@ -1,13 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import styles from './DragonElement.module.scss';
+
 function DragonElement(props) {
   const {
     name, type, description, images,
   } = props;
 
   return (
-    <article>
+    <article className={styles.container}>
       <img src={images} alt="dragon" />
       <div>
         <h2>{name}</h2>
