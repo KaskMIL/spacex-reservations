@@ -1,17 +1,17 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-const FETCH = 'rocketstore/rocket/FETCH'
-const API = 'https://api.spacexdata.com/v3/rockets'
+const FETCH = 'rocketstore/rocket/FETCH';
+const API = 'https://api.spacexdata.com/v3/rockets';
 export const getRocketAPI = createAsyncThunk(FETCH, async () => {
   const endPoint = await fetch(API, {
     method: 'GET',
     headers: {
-      'Content-type': 'application/json; charset=UTF-8', 
+      'Content-type': 'application/json; charset=UTF-8',
     },
   });
-  let result = await endPoint.json()
-  console.log(result);
-  return result
+  const result = await endPoint.json();
+  // console.log(result);
+  return result;
 });
 
 // Slice Reducer
