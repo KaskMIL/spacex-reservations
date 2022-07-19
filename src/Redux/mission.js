@@ -1,4 +1,4 @@
-const FETCH_API = 'space-travelers-hub/missions/FETCH_API';
+const FETCH_API = 'spacex-reservations/missions/FETCH_API';
 const initialState = [];
 const baseMissionsUrl = 'https://api.spacexdata.com/v3/missions';
 

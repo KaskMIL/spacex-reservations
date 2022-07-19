@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 import thunk from 'redux-thunk';
-import reducerMissions, { fetchMissions } from './mission';
+import reducerMissions from './mission';
 
 const rootReducer = reducerMissions;
 
@@ -10,10 +10,5 @@ const store = configureStore({
   },
   applyMiddleware: [thunk],
 });
-
-store.subscribe(() => {
-  store.getState();
-});
-store.dispatch(fetchMissions());
 
 export default store;

@@ -1,12 +1,17 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchMissions } from '../../Redux/mission';
 import Navigation from '../Navigation/Navigation';
 
 const Missions = () => {
   const getMissions = useSelector((state) => state.missions);
   const missions = getMissions;
-  // const dispatch = useDispatch();
-
+  const dispatch = useDispatch();
+  useEffect(() => {
+    if (!getMissions.length) {
+      dispatch(fetchMissions());
+    }
+  }, []);
   return (
     <div>
       <Navigation />
