@@ -11,7 +11,7 @@ function DragonElement(props) {
   return (
     <article className={styles.container}>
       <img src={images} alt="dragon" />
-      <div>
+      <div className={styles.dataContainer}>
         <h2>{name}</h2>
         <h3>{type}</h3>
         <p>{description}</p>
