@@ -15,7 +15,7 @@ function Navigation() {
         <ul className={styles.list}>
           <li>
             <NavLink
-              to="/rockets"
+              to="/"
               className={(Link) => (Link.isActive ? 'active' : 'none')}
             >
               Rockets
@@ -40,7 +40,7 @@ function Navigation() {
           </li>
           <li>
             <NavLink
-              to="/"
+              to="/profile"
               className={(Link) => (Link.isActive ? 'active' : 'none')}
             >
               My Profile
