@@ -1,4 +1,4 @@
-.missionCont{
+.missionCont {
   border: 1px solid lightgray;
 }
 
@@ -30,7 +30,7 @@ button {
   cursor: pointer;
 }
 
-.mission{
+.mission {
   min-width: 6em;
 }
 
@@ -48,4 +48,8 @@ button {
 
 .updateBtn {
   text-align: center;
+}
+
+.Title {
+  font-weight: 700;
 }
