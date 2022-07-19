@@ -26,11 +26,20 @@
   h3 {
     font-size: 1.6rem;
     font-weight: 300;
-    color: blue;
+    color: #357BFF;
   }
 
   p {
     font-size: 1.2rem;
     font-weight: 300;
+  }
+
+  button {
+    color: white;
+    background-color: #357BFF;
+    padding: 0.5rem;
+    font-weight: 100;
+    border: none;
+    border-radius: 0.3rem;
   }
 }
