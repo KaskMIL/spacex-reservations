@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchMissions, reservationUpdates } from '../../Redux/mission';
 import Navigation from '../Navigation/Navigation';
+import './missionPage.css';
 // import { reservationUpdates } from '../../Redux/mission';
 
 const Missions = () => {
@@ -40,7 +41,9 @@ const Missions = () => {
                 <td className="updateBtn">
                   <button
                     type="button"
-                    onClick={() => dispatch(reservationUpdates(data.mission_id))}
+                    onClick={() =>
+                      dispatch(reservationUpdates(data.mission_id))
+                    }
                     style={{
                       border: !data.reserved
                         ? '1px solid black'
