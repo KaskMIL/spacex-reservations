@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 
-import postReducer from './missions_api';
+import postReducer from './missions_reducers';
 
 export default configureStore({
   reducer: {
