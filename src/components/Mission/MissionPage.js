@@ -34,16 +34,14 @@ const Missions = () => {
                 <td>{data.description}</td>
                 <td>
                   {data.reserved && (
-                    <span style={{ background: 'green' }}>Active member</span>
+                    <span style={{ background: 'teal' }}>Active member</span>
                   )}
-                  {data.reserved && <span>NOT A MEMBER </span>}
+                  {!data.reserved && <span>NOT A MEMBER </span>}
                 </td>
                 <td className="updateBtn">
                   <button
                     type="button"
-                    onClick={() =>
-                      dispatch(reservationUpdates(data.mission_id))
-                    }
+                    onClick={() => dispatch(reservationUpdates(data.mission_id))}
                     style={{
                       border: !data.reserved
                         ? '1px solid black'
