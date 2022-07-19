@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { type } from '@testing-library/user-event/dist/type';
 
 function SpaceLi(props) {
   const {
