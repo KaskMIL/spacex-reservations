@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchMissions, reservationUpdates } from '../../Redux/mission';
 import Navigation from '../Navigation/Navigation';
-// import { reservationUpdates } from '../../Redux/mission';
+import './missionPage.css';
 
 const Missions = () => {
   const getMissions = useSelector((state) => state.missions);
