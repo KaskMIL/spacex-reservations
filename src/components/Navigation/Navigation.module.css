@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 1rem;
-  box-shadow: 0 11px 26px 3px rgba(0, 0, 0, 0.75);
+  border-bottom: 1px solid #D1D1D1;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -32,12 +32,10 @@
 
 .list li {
   padding: 0 1rem;
-  font-weight: 100;
 }
 
 .list li a {
   color: blue;
-  text-decoration: none;
 }
 
 .list li:hover {

@@ -5,7 +5,7 @@ import logo from '../../assets/planet.png';
 import styles from './Navigation.module.css';
 
 const navLinkStyles = ({ isActive }) => ({
-  fontWeight: isActive ? 'bold' : 'normal',
+  fontWeight: isActive ? 'bold' : '300',
   textDecoration: isActive ? 'underline' : 'none',
 });
 
