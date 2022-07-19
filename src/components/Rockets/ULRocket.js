@@ -12,9 +12,18 @@ function ULRocket() {
     }
   }, []);
 
+  const style = {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: '15px',
+  };
   return (
-    <ul>
-      {
+    <>
+      <hr style={{ margin: 'auto 15px' }} />
+      <ul style={style}>
+        {
         rockets.map((rocket) => (
           <SpaceLi
             key={rocket.rocket_id}
@@ -25,7 +34,8 @@ function ULRocket() {
           />
         ))
       }
-    </ul>
+      </ul>
+    </>
   );
 }
 
