@@ -30,7 +30,7 @@ const sliceRocket = createSlice({
           rocket_name: rocket.rocket_name,
           rocket_type: rocket.type,
           rocket_description: rocket.description,
-          rocket_image: rocket.flickr_images[1],
+          rocket_image: rocket.flickr_images[0],
         };
         rockets.push(data);
       });
