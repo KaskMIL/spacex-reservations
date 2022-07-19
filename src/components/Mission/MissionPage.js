@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchMissions } from '../../Redux/mission';
 import Navigation from '../Navigation/Navigation';
+// import { reservationUpdates } from '../../Redux/mission';
 
 const Missions = () => {
   const getMissions = useSelector((state) => state.missions);
@@ -30,6 +31,12 @@ const Missions = () => {
               <tr key={data.mission_id}>
                 <td className="Title">{data.mission_name}</td>
                 <td>{data.description}</td>
+                <td>
+                  {data.reserved && (
+                    <span style={{ background: 'green' }}>Active member</span>
+                  )}
+                  {data.reserved && <span>NOT A MEMBER </span>}
+                </td>
               </tr>
             ))}
           </tbody>
