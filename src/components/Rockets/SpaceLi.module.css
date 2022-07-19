@@ -1,32 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap');
 
 .li {
-    margin-top: 40px;
-    display: flex;
-    width: 80%;
-    justify-content: center;
-    gap: 5px;
+  margin-top: 40px;
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  gap: 5px;
 }
 
 .li img {
-    width: 200px;
-    height: 200px;
-    border-radius: 15px;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
 }
 
 .li div {
-    width: 800px;
+  width: 800px;
 }
 
 .li h2 {
-    font-size: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .li button {
-    background-color: rgba(3, 3, 253, 0.568);
-    color: #fff;
-    border: none;
-    padding: 15px;
-    border-radius: 10px;
+  background-color: rgba(3, 3, 253, 0.568);
+  color: #fff;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
 }
