@@ -26,6 +26,13 @@ const initialState = [];
 const dragonSlice = createSlice({
   name: 'dragons',
   initialState,
+  reducers: {
+    dragonReserve: {
+      reducer: (state, action) => state.map((dragon) => (
+        dragon.dragon_id === action.payload ? { ...dragon, reserved: true } : dragon)),
+      prepare: (dragonId) => ({ payload: dragonId }),
+    },
+  },
   extraReducers: {
     [getDragonsAPI.fulfilled]: (state, action) => {
       const dragons = [];
@@ -36,6 +43,7 @@ const dragonSlice = createSlice({
           dragon_type: dragon.type,
           dragon_description: dragon.description,
           dragon_images: dragon.flickr_images[2],
+          reserved: false,
         };
         dragons.push(data);
       });
@@ -43,5 +51,7 @@ const dragonSlice = createSlice({
     },
   },
 });
+
+export const { dragonReserve } = dragonSlice.actions;
 
 export default dragonSlice.reducer;

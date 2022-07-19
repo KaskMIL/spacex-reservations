@@ -26,6 +26,7 @@ function DragonPage() {
           {dragons.map((dragon) => (
             <DragonElement
               key={dragon.dragon_id}
+              id={dragon.dragon_id}
               name={dragon.dragon_name}
               type={dragon.dragon_type}
               description={dragon.dragon_description}
