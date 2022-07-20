@@ -17,15 +17,20 @@ function DragonElement(props) {
     <article className={styles.container}>
       <img src={images} alt="dragon" />
       <div className={styles.dataContainer}>
-        <h2>{name}</h2>
+        <div className={styles.reserve}>
+          <h2>{name}</h2>
+          {reserved ? (
+            <span>RESERVED</span>
+          ) : null }
+        </div>
         <h3>{type}</h3>
         <p>{description}</p>
         {reserved === false ? (
-          <button onClick={() => dispatch(reserve(id))} id={id} type="submit">
+          <button className={styles.resBtn} onClick={() => dispatch(reserve(id))} id={id} type="submit">
             Reserve Dragon
           </button>
         ) : (
-          <button onClick={() => dispatch(cancel(id))} id={id} type="submit">
+          <button className={styles.cancelBtn} onClick={() => dispatch(cancel(id))} id={id} type="submit">
             Cancel Reservation
           </button>
         )}
