@@ -20,7 +20,11 @@ function ULRocket() {
     gap: '15px',
   };
 
-  const reserveToggle = (id) => dispatch(updateRESERVATION(id));
+  // const reserveToggle = (id) => {
+  //   const deliver = dispatch(updateRESERVATION(id))
+  //   deliver
+  //   console.log(deliver);
+  // };
 
   return (
     <>
@@ -39,11 +43,33 @@ function ULRocket() {
                 {rocket.rocketType}
               </h3>
               <br />
-              {rocket.reserved ? (<span>Reserved</span>) : null }
-              <p>{rocket.rocketDescription}</p>
+
+              <p>
+                {!rocket.reserved ? (
+                  <span
+                    style={{
+                      backgroundColor: 'aqua', marginLeft: '10px', padding: '2px', borderRadius: '5px',
+                    }}
+                  >
+                    Reserved
+                  </span>
+                ) : null }
+                {rocket.rocketDescription}
+              </p>
               <button
                 type="button"
-                onClick={reserveToggle(rocket.rocketId)}
+                onClick={() => dispatch(updateRESERVATION(rocket.rocketId))}
+                style={{
+                  backgroundColor: !rocket.reserved
+                    ? 'white'
+                    : 'rgba(3, 3, 253, 0.568)',
+                  color: !rocket.reserved
+                    ? 'black'
+                    : 'white',
+                  border: !rocket.reserved
+                    ? '2px solid black'
+                    : 'none',
+                }}
               >
                 {!rocket.reserved ? 'Cancel Reservation' : 'Reserve Rocket'}
               </button>
