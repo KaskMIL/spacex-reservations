@@ -4,6 +4,11 @@ import logo from '../../assets/planet.png';
 
 import styles from './Navigation.module.css';
 
+const navLinkStyles = ({ isActive }) => ({
+  fontWeight: isActive ? 'bold' : '300',
+  textDecoration: isActive ? 'underline' : 'none',
+});
+
 function Navigation() {
   return (
     <header className={styles.container}>
@@ -15,8 +20,8 @@ function Navigation() {
         <ul className={styles.list}>
           <li>
             <NavLink
-              to="/"
-              className={(Link) => (Link.isActive ? 'active' : 'none')}
+              to="/rockets"
+              style={navLinkStyles}
             >
               Rockets
             </NavLink>
@@ -24,7 +29,7 @@ function Navigation() {
           <li>
             <NavLink
               to="/missions"
-              className={(Link) => (Link.isActive ? 'active' : 'none')}
+              style={navLinkStyles}
             >
               Missions
             </NavLink>
@@ -32,16 +37,15 @@ function Navigation() {
           <li className={styles.dragons}>
             <NavLink
               to="/dragons"
-              className={(Link) => (
-                Link.isActive ? 'active' : 'none')}
+              style={navLinkStyles}
             >
               Dragons
             </NavLink>
           </li>
           <li>
             <NavLink
-              to="/profile"
-              className={(Link) => (Link.isActive ? 'active' : 'none')}
+              to="/"
+              style={navLinkStyles}
             >
               My Profile
             </NavLink>
