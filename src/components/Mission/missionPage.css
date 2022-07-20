@@ -1,0 +1,55 @@
+.missionCont {
+  border: 1px solid lightgray;
+}
+
+th,
+td {
+  padding: 1em;
+  text-align: left;
+  border: 1px solid rgb(196, 191, 191);
+}
+
+tr:nth-child(even) {
+  background-color: whitesmoke;
+}
+
+span {
+  padding: 0.25em 1em;
+  border-radius: 0.5rem;
+  background-color: gray;
+  color: white;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+button {
+  padding: 0.5em 0.75em;
+  font-size: 0.95em;
+  border: 1px solid black;
+  border-radius: 0.35rem;
+  cursor: pointer;
+}
+
+.mission {
+  min-width: 6em;
+}
+
+.descr {
+  min-width: 20em;
+}
+
+.status {
+  min-width: 12em;
+}
+
+.btn {
+  min-width: 8em;
+}
+
+.updateBtn {
+  text-align: center;
+}
+
+.Title {
+  font-weight: 700;
+}
