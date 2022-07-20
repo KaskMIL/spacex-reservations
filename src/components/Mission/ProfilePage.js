@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import Navigation from './Navigation/Navigation';
+import Navigation from '../Navigation/Navigation';
+import './profile.css';
 
 function ProfilePage() {
   const missionProfile = useSelector((state) => state.missions);
@@ -18,7 +19,7 @@ function ProfilePage() {
     <div>
       <Navigation />
       <div className="profile-sect">
-        <h1>My Missions</h1>
+        <h1 className="header">My Missions</h1>
         <ul className="missionsBooked">
           {missionCounter > 0 ? (
             missionsReserved.map((data) => (
@@ -28,7 +29,7 @@ function ProfilePage() {
             ))
           ) : (
             <li className="hide" style={{ border: 'none' }}>
-              reserved missions
+              reserved missions currently(0)
             </li>
           )}
         </ul>
