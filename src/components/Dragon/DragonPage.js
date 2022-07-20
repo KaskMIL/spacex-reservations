@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { getDragonsAPI } from '../../Redux/DragonsReducerSlice';
+import { getDragonsAPI } from '../../Redux/DragonReducer';
 
 import Navigation from '../Navigation/Navigation';
 import DragonElement from '../dragonElement/DragonElement';
@@ -26,6 +26,7 @@ function DragonPage() {
           {dragons.map((dragon) => (
             <DragonElement
               key={dragon.dragon_id}
+              id={dragon.dragon_id}
               name={dragon.dragon_name}
               type={dragon.dragon_type}
               description={dragon.dragon_description}

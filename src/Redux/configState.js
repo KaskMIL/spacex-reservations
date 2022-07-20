@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import dragonSlice from './DragonsReducerSlice';
+import dragonsReducer from './DragonReducer';
 import { rocketReducer } from './RocketAPIReducer';
 import reducerMissions from './mission';
 
@@ -9,7 +9,7 @@ const Store = configureStore({
   reducer: {
     missions: rootReducer,
     rockets: rocketReducer,
-    dragons: dragonSlice,
+    dragons: dragonsReducer,
   },
 });
 
