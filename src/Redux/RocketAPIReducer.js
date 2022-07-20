@@ -33,22 +33,26 @@ export const rocketReducer = (state = initializeState, action) => {
   switch (action.type) {
     case FETCH:
       return payLoad;
-    case UPDATE_FETCH:
+    case UPDATE_FETCH: {
       return [
         ...state.map((rocket) => {
-          if (rocket.rocket_id !== payLoad) {
-            return rocket;
+          if (rocket.rocketId !== payLoad) {
+            return { ...rocket };
           }
           return { ...rocket, reserved: !rocket.reserved };
         }),
       ];
+    }
 
     default:
       return state;
   }
 };
 
-export const updateRESERVATION = (id) => ({
-  type: UPDATE_FETCH,
-  payLoad: id,
-});
+export const updateRESERVATION = (id) => async (dispatch) => {
+  dispatch({
+    type: UPDATE_FETCH,
+    payLoad: id,
+  });
+  // console.log(id);
+};
