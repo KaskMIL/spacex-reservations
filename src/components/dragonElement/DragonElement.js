@@ -31,7 +31,7 @@ function DragonElement(props) {
           </button>
         ) : (
           <button className={styles.cancelBtn} onClick={() => dispatch(cancel(id))} id={id} type="submit">
-            Cancel Reservation
+            CANCEL RESERVATION
           </button>
         )}
       </div>
