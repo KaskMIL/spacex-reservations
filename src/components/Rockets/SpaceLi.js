@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './SpaceLi.module.css';
 
 function SpaceLi(props) {
   const {
@@ -7,14 +8,15 @@ function SpaceLi(props) {
   } = props;
   return (
     <>
-      <li>
-        <img src={images} alt={name} />
+      <li className={styles.li}>
+        <img src={images} alt={type} />
         <div>
-          <button type="button">Reserved</button>
-          <h2>{type}</h2>
+          <h2>{name}</h2>
+          <br />
+          {/* <button type="button">Reserved</button> */}
           <p>{description}</p>
           <button type="button">
-            Cancel Resevation
+            Reserve Rocket
           </button>
         </div>
       </li>
