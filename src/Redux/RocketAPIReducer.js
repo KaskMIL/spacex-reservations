@@ -1,8 +1,9 @@
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-
 const FETCH = 'rocketstore/rocket/FETCH';
+const UPDATE_FETCH = 'rocketstore/rocket/UPDATE_FETCH';
 const API = 'https://api.spacexdata.com/v3/rockets';
-export const getRocketAPI = createAsyncThunk(FETCH, async () => {
+const initializeState = [];
+
+export const getRocketAPI = () => async (dispatch) => {
   const endPoint = await fetch(API, {
     method: 'GET',
     headers: {
@@ -10,33 +11,44 @@ export const getRocketAPI = createAsyncThunk(FETCH, async () => {
     },
   });
   const result = await endPoint.json();
-  // console.log(result);
-  return result;
+  const payLoad = await result.map((rocket) => {
+    const data = {
+      rocketId: rocket.id,
+      rocketName: rocket.rocket_name,
+      rocketType: rocket.rocket_type,
+      rocketDescription: rocket.description,
+      rocketImage: rocket.flickr_images[0],
+      reserved: true,
+    };
+    return data;
+  });
+  dispatch({
+    type: FETCH,
+    payLoad,
+  });
+};
+
+export const rocketReducer = (state = initializeState, action) => {
+  const { payLoad } = action;
+  switch (action.type) {
+    case FETCH:
+      return payLoad;
+    case UPDATE_FETCH:
+      return [
+        ...state.map((rocket) => {
+          if (rocket.rocket_id !== payLoad) {
+            return rocket;
+          }
+          return { ...rocket, reserved: !rocket.reserved };
+        }),
+      ];
+
+    default:
+      return state;
+  }
+};
+
+export const updateRESERVATION = (id) => ({
+  type: UPDATE_FETCH,
+  payLoad: id,
 });
-
-// Slice Reducer
-
-const initializeState = [];
-
-const sliceRocket = createSlice({
-  name: 'rockets',
-  initialState: initializeState,
-  extraReducers: {
-    [getRocketAPI.fulfilled]: (state, action) => {
-      const rockets = [];
-      action.payload.forEach((rocket) => {
-        const data = {
-          rocket_id: rocket.id,
-          rocket_name: rocket.rocket_name,
-          rocket_type: rocket.type,
-          rocket_description: rocket.description,
-          rocket_image: rocket.flickr_images[0],
-        };
-        rockets.push(data);
-      });
-      return rockets;
-    },
-  },
-});
-
-export default sliceRocket.reducer;
