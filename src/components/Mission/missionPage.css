@@ -1,22 +1,13 @@
-<<<<<<< HEAD
 .missionCont{
   border: 1px solid lightgray;
   margin: 2em;
-=======
-.missionCont {
-  border: 1px solid lightgray;
->>>>>>> 4329459e6d213ec94367be41a02ae284f6eaee9e
 }
 
 th,
 td {
   padding: 1em;
   text-align: left;
-<<<<<<< HEAD
   border: 1px solid lightgray;
-=======
-  border: 1px solid rgb(196, 191, 191);
->>>>>>> 4329459e6d213ec94367be41a02ae284f6eaee9e
 }
 
 tr:nth-child(even) {
@@ -49,7 +40,7 @@ button {
 }
 
 .status {
-  min-width: 9em;
+  min-width: 12em;
 }
 
 .btn {
@@ -59,10 +50,3 @@ button {
 .updateBtn {
   text-align: center;
 }
-<<<<<<< HEAD
-=======
-
-.Title {
-  font-weight: 700;
-}
->>>>>>> 4329459e6d213ec94367be41a02ae284f6eaee9e
