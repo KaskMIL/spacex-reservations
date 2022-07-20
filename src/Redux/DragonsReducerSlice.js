@@ -21,7 +21,7 @@ export const getDragonsAPI = createAsyncThunk(GETDRAGONS, async () => {
 });
 
 // Slice reducer
-const initialState = [];
+export const initialState = [];
 
 const dragonSlice = createSlice({
   name: 'dragons',
