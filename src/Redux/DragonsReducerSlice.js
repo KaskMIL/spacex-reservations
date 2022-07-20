@@ -29,7 +29,7 @@ const dragonSlice = createSlice({
   reducers: {
     dragonReserve: {
       reducer: (state, action) => state.map((dragon) => (
-        dragon.dragon_id === action.payload ? { ...dragon, reserved: true } : dragon)),
+        dragon.dragon_id === action.payload ? { ...dragon, reserved: !dragon.reserved } : dragon)),
       prepare: (dragonId) => ({ payload: dragonId }),
     },
   },

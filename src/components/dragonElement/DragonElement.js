@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { useDispatch } from 'react-redux';
-import { dragonReserve } from '../../Redux/DragonsReducerSlice';
+import { reserve } from '../../Redux/DragonReducer';
 
 import styles from './DragonElement.module.scss';
 
@@ -13,11 +13,6 @@ function DragonElement(props) {
 
   const dispatch = useDispatch();
 
-  const handleReserve = (e) => {
-    const { id } = e.target.id;
-    dispatch(dragonReserve(id));
-  };
-
   return (
     <article className={styles.container}>
       <img src={images} alt="dragon" />
@@ -25,7 +20,7 @@ function DragonElement(props) {
         <h2>{name}</h2>
         <h3>{type}</h3>
         <p>{description}</p>
-        <button onClick={handleReserve} id={id} type="submit">Reserve Dragon</button>
+        <button onClick={() => dispatch(reserve(id))} id={id} type="submit">Reserve Dragon</button>
       </div>
     </article>
   );

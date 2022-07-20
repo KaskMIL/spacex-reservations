@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { getDragonsAPI } from '../../Redux/DragonsReducerSlice';
+import { getDragonsAPI } from '../../Redux/DragonReducer';
 
 import Navigation from '../Navigation/Navigation';
 import DragonElement from '../dragonElement/DragonElement';
