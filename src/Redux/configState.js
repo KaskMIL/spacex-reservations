@@ -1,7 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
-import thunk from 'redux-thunk';
 import dragonSlice from './DragonsReducerSlice';
-import sliceRocket from './RocketAPIReducer';
+import { rocketReducer } from './RocketAPIReducer';
 import reducerMissions from './mission';
 
 const rootReducer = reducerMissions;
@@ -9,10 +8,9 @@ const rootReducer = reducerMissions;
 const Store = configureStore({
   reducer: {
     missions: rootReducer,
-    rockets: sliceRocket,
+    rockets: rocketReducer,
     dragons: dragonSlice,
-  },
-  applyMiddleware: [thunk],
+  }
 });
 
 export default Store;
