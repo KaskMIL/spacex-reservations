@@ -54,5 +54,4 @@ export const updateRESERVATION = (id) => async (dispatch) => {
     type: UPDATE_FETCH,
     payLoad: id,
   });
-  // console.log(id);
 };
