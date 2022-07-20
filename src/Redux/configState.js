@@ -10,7 +10,7 @@ const Store = configureStore({
     missions: rootReducer,
     rockets: rocketReducer,
     dragons: dragonSlice,
-  }
+  },
 });
 
 export default Store;
