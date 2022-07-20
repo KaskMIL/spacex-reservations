@@ -20,12 +20,6 @@ function ULRocket() {
     gap: '15px',
   };
 
-  // const reserveToggle = (id) => {
-  //   const deliver = dispatch(updateRESERVATION(id))
-  //   deliver
-  //   console.log(deliver);
-  // };
-
   return (
     <>
       <hr style={{ margin: 'auto 15px' }} />

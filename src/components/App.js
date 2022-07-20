@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import DragonPage from './Dragon/DragonPage';
 import MissionPage from './Mission/MissionPage';
 import RocketsPage from './Rockets/RocketsPage';
-import ProfilePage from './ProfilePage';
+import ProfilePage from './Mission/ProfilePage';
 import './App.css';
 
 function App() {
