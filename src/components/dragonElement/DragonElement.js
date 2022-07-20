@@ -2,13 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { useDispatch } from 'react-redux';
-import { reserve } from '../../Redux/DragonReducer';
+import { cancel, reserve } from '../../Redux/DragonReducer';
 
 import styles from './DragonElement.module.scss';
 
 function DragonElement(props) {
   const {
-    name, type, description, images, id,
+    name, type, description, images, id, reserved,
   } = props;
 
   const dispatch = useDispatch();
@@ -17,10 +17,23 @@ function DragonElement(props) {
     <article className={styles.container}>
       <img src={images} alt="dragon" />
       <div className={styles.dataContainer}>
-        <h2>{name}</h2>
+        <div className={styles.reserve}>
+          <h2>{name}</h2>
+          {reserved ? (
+            <span>RESERVED</span>
+          ) : null }
+        </div>
         <h3>{type}</h3>
         <p>{description}</p>
-        <button onClick={() => dispatch(reserve(id))} id={id} type="submit">Reserve Dragon</button>
+        {reserved === false ? (
+          <button className={styles.resBtn} onClick={() => dispatch(reserve(id))} id={id} type="submit">
+            Reserve Dragon
+          </button>
+        ) : (
+          <button className={styles.cancelBtn} onClick={() => dispatch(cancel(id))} id={id} type="submit">
+            CANCEL RESERVATION
+          </button>
+        )}
       </div>
     </article>
   );
@@ -32,6 +45,7 @@ DragonElement.propTypes = {
   description: PropTypes.string,
   images: PropTypes.string,
   id: PropTypes.string,
+  reserved: PropTypes.bool,
 };
 
 DragonElement.defaultProps = {
@@ -40,6 +54,7 @@ DragonElement.defaultProps = {
   description: '',
   images: '',
   id: '',
+  reserved: false,
 };
 
 export default DragonElement;
