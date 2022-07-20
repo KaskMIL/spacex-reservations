@@ -20,7 +20,7 @@ function Navigation() {
         <ul className={styles.list}>
           <li>
             <NavLink
-              to="/rockets"
+              to="/"
               style={navLinkStyles}
             >
               Rockets
@@ -44,7 +44,7 @@ function Navigation() {
           </li>
           <li>
             <NavLink
-              to="/"
+              to="/profile"
               style={navLinkStyles}
             >
               My Profile
