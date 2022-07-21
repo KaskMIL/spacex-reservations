@@ -1,5 +1,4 @@
 import { screen, render } from '@testing-library/react';
-import { MemoryRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit';
 import reducerMissions from '../../../Redux/mission';
@@ -43,15 +42,12 @@ const mockStore = () => {
 describe('Testing the Missions component', () => {
   test('When data fetched from API all 10 missions are rendering succesfully', () => {
     render(
-      <MemoryRouter>
-        <Provider store={mockStore()}>
-          <Missions />
-        </Provider>
-        ,{' '}
-      </MemoryRouter>
+      <Provider store={mockStore()}>
+        <Missions />
+      </Provider>,
     );
     expect(screen.getAllByText('Join mission').length).toBeGreaterThanOrEqual(
-      3
+      3,
     );
   });
 });
