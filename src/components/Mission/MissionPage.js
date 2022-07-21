@@ -1,9 +1,8 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchMissions, reservationUpdates } from '../../Redux/mission';
-import Navigation from '../Navigation/Navigation';
+// import Navigation from '../Navigation/Navigation';
 import './missionPage.css';
-// import { reservationUpdates } from '../../Redux/mission';
 
 const Missions = () => {
   const getMissions = useSelector((state) => state.missions);
@@ -16,7 +15,7 @@ const Missions = () => {
   }, []);
   return (
     <div>
-      <Navigation />
+      {/* <Navigation /> */}
       <div className="missionContainer">
         <table className="missionTable" cellSpacing="0">
           <thead>
