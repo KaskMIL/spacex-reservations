@@ -19,12 +19,12 @@ function DragonProfile() {
         {reserveCount > 0 ? (
           dragons.map((dragon) => {
             if (dragon.reserved) {
-              return <li key={dragon.dragon_id}>{dragon.dragon_name}</li>;
+              return <li className="missionLi" key={dragon.dragon_id}>{dragon.dragon_name}</li>;
             }
             return null;
           })
         ) : (
-          <li>Reserved Rockets (0)</li>
+          <li style={{ border: 'none' }}>Reserved Dragons Currently(0)</li>
         )}
       </ul>
     </section>

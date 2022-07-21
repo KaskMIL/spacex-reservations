@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getDragonsAPI } from '../../Redux/DragonReducer';
 
 import Navigation from '../Navigation/Navigation';
-import DragonElement from '../dragonElement/DragonElement';
+import DragonElement from './DragonElement';
 
 import styles from './DragonPage.module.scss';
 

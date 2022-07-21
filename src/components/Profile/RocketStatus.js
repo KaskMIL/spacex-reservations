@@ -14,7 +14,7 @@ function RocketStatus() {
 
   return (
     <>
-      <div className="profile-sect">
+      <section className="profile-sect">
         <h1 className="header">My Rockets</h1>
         <ul className="missionsBooked">
           {counter > 0 ? (
@@ -34,7 +34,7 @@ function RocketStatus() {
             </li>
           )}
         </ul>
-      </div>
+      </section>
     </>
   );
 }

@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import DragonPage from './Dragon/DragonPage';
 import MissionPage from './Mission/MissionPage';
 import RocketsPage from './Rockets/RocketsPage';
-import ProfilePage from './Mission/ProfilePage';
+import ProfilePage from './Profile/ProfilePage';
 import './App.css';
 
 function App() {
