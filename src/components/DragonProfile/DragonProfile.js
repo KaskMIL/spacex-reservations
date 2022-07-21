@@ -1,10 +1,11 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import styles from './DragonProfile.module.scss';
 
 function DragonProfile() {
   const dragons = useSelector((state) => state.dragons);
   return (
-    <section>
+    <section className={styles.container}>
       <h1>My Dragons</h1>
       <ul>
         {dragons.map((dragon) => {
