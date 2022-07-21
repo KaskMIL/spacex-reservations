@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import Navigation from '../Navigation/Navigation';
 import './profile.css';
+import RocketStatus from '../Profile/RocketStatus';
 
 function ProfilePage() {
   const missionProfile = useSelector((state) => state.missions);
@@ -34,6 +35,7 @@ function ProfilePage() {
           )}
         </ul>
       </div>
+      <RocketStatus />
     </div>
   );
 }
