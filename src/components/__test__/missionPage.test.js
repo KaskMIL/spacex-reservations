@@ -16,7 +16,7 @@ describe('Tests for the Missions component', () => {
     expect(screen.getByText('Description')).toBeInTheDocument();
     expect(screen.getByText('Status')).toBeInTheDocument();
   });
-//   test(' the snapshot', () => {
-//     expect(screen.debug()).toMatchSnapshot();
-//   });
+  test(' the snapshot', () => {
+    expect(screen.debug()).toMatchSnapshot();
+  });
 });
