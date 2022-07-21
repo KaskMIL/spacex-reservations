@@ -50,7 +50,7 @@ describe('Testing the Missions component', () => {
       </MemoryRouter>,
     );
     expect(screen.getAllByText('Join mission').length).toBeGreaterThanOrEqual(
-      3
+      3,
     );
   });
 });
