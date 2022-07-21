@@ -19,7 +19,7 @@ function RocketStatus() {
         <ul className="missionsBooked">
           {counter > 0 ? (
             rockets.map((rocket) => {
-              if (rocket.rocketId) {
+              if (!rocket.reserved) {
                 return (
                   <li className="missionLi" key={rocket.rocketId}>
                     {rocket.rocketName}
