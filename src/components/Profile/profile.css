@@ -2,10 +2,11 @@
 
 .container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   font-family: 'Roboto', sans-serif;
   column-gap: 1rem;
   padding: 1rem 2rem;
+  
 }
 
 .profile-sect {
