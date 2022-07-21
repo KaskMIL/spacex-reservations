@@ -26,23 +26,20 @@ const mocks = () => {
     },
   });
 };
-describe('Tests for the Missions component', () => {
+describe('Tests for the Missions page/component', () => {
   render(
     <Provider store={store}>
       <Missions />
     </Provider>,
   );
-  test('expected to have the following text to appear on screen', () => {
+  test('Test the following item to be displayed on screen', () => {
     expect(screen.getByText('Missions')).toBeInTheDocument();
     expect(screen.getByText('Description')).toBeInTheDocument();
     expect(screen.getByText('Status')).toBeInTheDocument();
   });
-  test(' the snapshot', () => {
+  test(' Test the snapshot', () => {
     expect(screen.debug()).toMatchSnapshot();
   });
-});
-
-describe('Missions component', () => {
   test('Badges are displaying correctly on mission page load', () => {
     render(
       <Provider store={mocks()}>
@@ -53,7 +50,7 @@ describe('Missions component', () => {
       1,
     );
   });
-  test('Clicking on Join mission buttons enable, thus updating member bagdes', () => {
+  test('check when the join btn is click get enable and update the budges', () => {
     render(
       <Provider store={mocks()}>
         <Missions />
