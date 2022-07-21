@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Body of the Dragons Page Matches snapshot 1`] = `
+<div>
+  <main
+    className="container"
+  >
+    <section />
+  </main>
+</div>
+`;

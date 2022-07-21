@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchMissions, reservationUpdates } from '../../Redux/mission';
-import Navigation from '../Navigation/Navigation';
 import './missionPage.css';
 
 const Missions = () => {
@@ -15,7 +14,6 @@ const Missions = () => {
   }, []);
   return (
     <div>
-      <Navigation />
       <div className="missionContainer">
         <table className="missionTable" cellSpacing="0">
           <thead>
