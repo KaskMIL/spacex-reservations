@@ -6,7 +6,6 @@
   font-family: 'Roboto', sans-serif;
   column-gap: 1rem;
   padding: 1rem 2rem;
-  
 }
 
 .profile-sect {
@@ -19,7 +18,7 @@
   text-align: center;
 }
 
-.container ul{
+.container ul {
   list-style: none;
 }
 
