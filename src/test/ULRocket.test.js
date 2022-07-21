@@ -82,24 +82,4 @@ describe('Body of the whole Rocket Page', () => {
     ).toJSON();
     expect(Tree).toMatchSnapshot();
   });
-
-  //   it('calls onClick prop when clicked', async () => {
-  //     render(
-  //       <MemoryRouter>
-  //         <Provider store={store}>
-  //           <ULRocket />
-  //         </Provider>
-  //       </MemoryRouter>,
-  //     );
-
-  //     const element = screen.getByTestId('custom-element')
-  //     await waitFor(() => {
-  //       const button = document.getElementsByName('button');
-  //       expect(button.textContent).toBe('Reserve Rocket');
-  //       act(() => {
-  //         button.dispatchEvent(new MouseEvent('click', { bubbles: true }));
-  //       });
-  //       expect(button.textContent).toBe('Reserve Rocket');
-  //     });
-  //   });
 });
