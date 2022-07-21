@@ -1,6 +1,5 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import Navigation from '../Navigation/Navigation';
 import './profile.css';
 
 function ProfilePage() {
@@ -17,7 +16,6 @@ function ProfilePage() {
   });
   return (
     <div>
-      <Navigation />
       <div className="profile-sect">
         <h1 className="header">My Missions</h1>
         <ul className="missionsBooked">

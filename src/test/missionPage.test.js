@@ -3,9 +3,9 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { Provider } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit';
-import Missions from '../Mission/MissionPage';
-import store from '../../Redux/configState';
-import reducerMissions from '../../Redux/mission';
+import Missions from '../components/Mission/MissionPage';
+import store from '../Redux/configState';
+import reducerMissions from '../Redux/mission';
 
 const mocks = () => {
   const preloadedState = {
