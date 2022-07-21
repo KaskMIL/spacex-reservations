@@ -1,12 +1,13 @@
 .missionCont {
   border: 1px solid lightgray;
+  margin: 2em;
 }
 
 th,
 td {
   padding: 1em;
   text-align: left;
-  border: 1px solid rgb(196, 191, 191);
+  border: 1px solid lightgray;
 }
 
 tr:nth-child(even) {
@@ -35,7 +36,7 @@ button {
 }
 
 .descr {
-  min-width: 20em;
+  min-width: 25em;
 }
 
 .status {
@@ -48,8 +49,4 @@ button {
 
 .updateBtn {
   text-align: center;
-}
-
-.Title {
-  font-weight: 700;
 }
