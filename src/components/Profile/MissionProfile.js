@@ -31,7 +31,7 @@ function MissionProfile() {
               border: 'none',
             }}
           >
-            reserved missions currently(0)
+            Reserved Missions Currently(0)
           </li>
         )}
       </ul>

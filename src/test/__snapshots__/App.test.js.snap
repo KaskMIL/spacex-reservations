@@ -86,23 +86,48 @@ exports[`Body of the whole Rocket Page It matches snapshot 1`] = `
       </ul>
     </nav>
   </header>
-  <hr
-    style={
-      Object {
-        "margin": "auto 15px",
+  <div>
+    <hr
+      style={
+        Object {
+          "margin": "auto 15px",
+        }
       }
-    }
-  />
-  <ul
-    style={
-      Object {
-        "alignItems": "center",
-        "display": "flex",
-        "flexDirection": "column",
-        "gap": "15px",
-        "justifyContent": "center",
+    />
+    <ul
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "column",
+          "gap": "15px",
+          "justifyContent": "center",
+        }
       }
-    }
-  />
+    />
+  </div>
+  <footer
+    className="container"
+  >
+    <a
+      href="https://github.com/KaskMIL/"
+      target="blank"
+    >
+      Tom Milanesi,
+    </a>
+    <a
+      href="https://github.com/Brenda309"
+      target="blank"
+    >
+      Brenda Wihogora,
+    </a>
+    <a
+      href="https://github.com/Olamarx"
+      target="blank"
+    >
+      Olaoluwa Owoeye
+    </a>
+    © All Rights Reserved
+  </footer>
 </div>
 `;
