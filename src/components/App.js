@@ -13,7 +13,6 @@ function App() {
     <div>
       <Navigation />
       <Routes>
-        <Route exact path="/" element={<ProfilePage />} />
 
         <Route path="/" element={<RocketsPage />} />
 
@@ -21,7 +20,6 @@ function App() {
 
         <Route path="/missions" element={<MissionPage />} />
 
-        <Route path="/rockets" element={<RocketsPage />} />
         <Route exact path="/profile" element={<ProfilePage />} />
       </Routes>
     </div>

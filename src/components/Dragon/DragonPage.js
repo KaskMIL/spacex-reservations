@@ -2,8 +2,6 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { getDragonsAPI } from '../../Redux/DragonReducer';
-
-import Navigation from '../Navigation/Navigation';
 import DragonElement from './DragonElement';
 
 import styles from './DragonPage.module.scss';
@@ -20,7 +18,6 @@ function DragonPage() {
 
   return (
     <div>
-      <Navigation />
       <main className={styles.container}>
         <section>
           {dragons.map((dragon) => (
