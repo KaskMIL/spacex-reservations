@@ -1,17 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-<!-- ## Mockup of the Site -->
-<!-- <p align="center">
-  <img
-  src="#"
-  alt="Mockup Version"
-  >
-</p> -->
-
-
 # SpaceX Reservation Group Project 
 
-> In this project, we created an app that renders the content from the API and use the redus as the store management to hold and dispatch data at every change of state.
+>  SpaceX-reservations is an App that displays real live data from the SpaceX API. The App counts with four different pages: Rockets, Missions, Dragons and Profile. In the first three pages, the data is displayed, and the users can book Rockets and Dragons, and join selected space missions. On the Profile page, the user can find a summary of the Rockets and Dragons booked, and the missions joined. Components builded with React, centraliced application's state with Redux, and styling with CSS and SASS.
 
 ## Built With
 
@@ -79,6 +70,10 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## Logo image
+
+<a href="https://www.flaticon.com/free-icons/planet" title="planet icons">Planet icons created by Freepik - Flaticon</a>
 
 
 ## 📝 License
