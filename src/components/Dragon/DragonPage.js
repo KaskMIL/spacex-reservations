@@ -31,6 +31,7 @@ function DragonPage() {
               type={dragon.dragon_type}
               description={dragon.dragon_description}
               images={dragon.dragon_images}
+              reserved={dragon.reserved}
             />
           ))}
         </section>
