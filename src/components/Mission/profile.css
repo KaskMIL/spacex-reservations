@@ -1,20 +1,13 @@
-.profile-sect {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap');
+
+.container {
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding-top: 7em;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  column-gap: 2rem;
 }
 
-.header {
-  font-size: 2em;
-  padding-bottom: 1em;
-}
-
-.missionLi {
-  border: black solid 1px;
-  width: 30%;
-  margin: auto;
+.container ul {
   list-style: none;
-  padding: 1em;
-  font-size: 1.3em;
 }

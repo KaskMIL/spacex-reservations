@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import Navigation from '../Navigation/Navigation';
 import './profile.css';
 import RocketStatus from '../Profile/RocketStatus';
+import DragonProfile from '../DragonProfile/DragonProfile';
 
 function ProfilePage() {
   const missionProfile = useSelector((state) => state.missions);
@@ -19,23 +20,26 @@ function ProfilePage() {
   return (
     <div>
       <Navigation />
-      <div className="profile-sect">
-        <h1 className="header">My Missions</h1>
-        <ul className="missionsBooked">
-          {missionCounter > 0 ? (
-            missionsReserved.map((data) => (
-              <li className="missionLi" key={data.mission_id}>
-                {data.mission_name}
+      <main className="container">
+        <section className="profile-sect">
+          <h1 className="header">My Missions</h1>
+          <ul className="missionsBooked">
+            {missionCounter > 0 ? (
+              missionsReserved.map((data) => (
+                <li className="missionLi" key={data.mission_id}>
+                  {data.mission_name}
+                </li>
+              ))
+            ) : (
+              <li className="hide" style={{ border: 'none' }}>
+                reserved missions currently(0)
               </li>
-            ))
-          ) : (
-            <li className="hide" style={{ border: 'none' }}>
-              reserved missions currently(0)
-            </li>
-          )}
-        </ul>
-      </div>
-      <RocketStatus />
+            )}
+          </ul>
+        </section>
+        <RocketStatus />
+        <DragonProfile />
+      </main>
     </div>
   );
 }
