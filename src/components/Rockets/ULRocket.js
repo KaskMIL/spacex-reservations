@@ -51,6 +51,7 @@ function ULRocket() {
                 {rocket.rocketDescription}
               </p>
               <button
+                data-testid="custom-element"
                 type="button"
                 onClick={() => dispatch(updateRESERVATION(rocket.rocketId))}
                 style={{
