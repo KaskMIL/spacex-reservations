@@ -4,6 +4,7 @@ import DragonPage from './Dragon/DragonPage';
 import MissionPage from './Mission/MissionPage';
 import RocketsPage from './Rockets/RocketsPage';
 import ProfilePage from './Profile/ProfilePage';
+import Footer from './Footer/Footer';
 import './App.css';
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
         />
 
       </Routes>
+      <Footer />
     </>
   );
 }
