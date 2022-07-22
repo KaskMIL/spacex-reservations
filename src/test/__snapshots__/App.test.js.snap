@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Body of the whole Rocket Page It matches snapshot 1`] = `
+<div>
+  <header
+    className="container"
+  >
+    <div
+      className="logo"
+    >
+      <img
+        alt="logo"
+        src="planet.png"
+      />
+      <h1>
+        Space Travelers' hub
+      </h1>
+    </div>
+    <nav>
+      <ul
+        className="list"
+      >
+        <li>
+          <a
+            aria-current="page"
+            className="active"
+            href="/"
+            onClick={[Function]}
+            style={
+              Object {
+                "fontWeight": "bold",
+                "textDecoration": "underline",
+              }
+            }
+          >
+            Rockets
+          </a>
+        </li>
+        <li>
+          <a
+            className=""
+            href="/missions"
+            onClick={[Function]}
+            style={
+              Object {
+                "fontWeight": "300",
+                "textDecoration": "none",
+              }
+            }
+          >
+            Missions
+          </a>
+        </li>
+        <li
+          className="dragons"
+        >
+          <a
+            className=""
+            href="/dragons"
+            onClick={[Function]}
+            style={
+              Object {
+                "fontWeight": "300",
+                "textDecoration": "none",
+              }
+            }
+          >
+            Dragons
+          </a>
+        </li>
+        <li>
+          <a
+            className=""
+            href="/profile"
+            onClick={[Function]}
+            style={
+              Object {
+                "fontWeight": "300",
+                "textDecoration": "none",
+              }
+            }
+          >
+            My Profile
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div>
+    <hr
+      style={
+        Object {
+          "margin": "auto 15px",
+        }
+      }
+    />
+    <ul
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "column",
+          "gap": "15px",
+          "justifyContent": "center",
+        }
+      }
+    />
+  </div>
+  <footer
+    className="container"
+  >
+    <a
+      href="https://github.com/KaskMIL/"
+      target="blank"
+    >
+      Tom Milanesi,
+    </a>
+    <a
+      href="https://github.com/Brenda309"
+      target="blank"
+    >
+      Brenda Wihogora,
+    </a>
+    <a
+      href="https://github.com/Olamarx"
+      target="blank"
+    >
+      Olaoluwa Owoeye
+    </a>
+    © All Rights Reserved
+  </footer>
+</div>
+`;
