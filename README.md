@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-[Netlify](https://lively-licorice-d3ec7e.netlify.app/dragons)
+[Netlify](https://lively-licorice-d3ec7e.netlify.app/)
 
 
 ## Getting Started
