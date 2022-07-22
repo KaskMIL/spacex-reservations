@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 import renderer from 'react-test-renderer';
 import {
   render, screen, waitFor,
